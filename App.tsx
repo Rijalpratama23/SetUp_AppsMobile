@@ -12,13 +12,6 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 
-const MyName = ({ name }: { name: string }) => {
-  return (
-    <View style={styles.nameContainer}>
-      <Text style={styles.nameText}>Hello, my name is {name}.</Text>
-    </View>
-  );
-};
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -47,23 +40,8 @@ function AppContent() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  nameContainer: {
-    padding: 20,
-    backgroundColor: '#3498db',
-    borderRadius: 10,
-    marginVertical: 20,
-  },
-  nameText: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#FFF',
   },
 });
-
 
 
 
